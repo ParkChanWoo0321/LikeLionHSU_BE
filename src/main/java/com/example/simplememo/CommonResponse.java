@@ -1,4 +1,4 @@
-package com.example.simplememo.dto;
+package com.example.simplememo;
 
 import lombok.Builder;
 import lombok.Getter;
