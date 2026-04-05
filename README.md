@@ -7,6 +7,6 @@
 
 ## 수업 자료 📎
 
-- 노션 링크: **https://www.notion.so/2-32c903023d6680a09ef5f8be24845130?source=copy_link**  
+- 2주차 노션 링크: **https://www.notion.so/2-32c903023d6680a09ef5f8be24845130?source=copy_link**    
 
 ---
