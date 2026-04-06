@@ -10,3 +10,9 @@
 - 2주차 노션 링크: **https://www.notion.so/2-32c903023d6680a09ef5f8be24845130?source=copy_link**    
 
 ---
+
+## 수업 자료 📎
+
+- 3주차 노션 링크: **https://www.notion.so/3-32c903023d6680fdb97af2a42ccf9471?source=copy_link**    
+
+---
