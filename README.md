@@ -22,3 +22,9 @@
 - 4주차 노션 링크: **https://app.notion.com/p/4-32c903023d668012ad70dedb774fb750?source=copy_link&assetsVersion=23.13.20260615.0944**    
 
 ---
+
+## 수업 자료 📎
+
+- 5주차 노션 링크: **https://app.notion.com/p/5-342903023d6680c1ba44d7c1fd0cd2f7?source=copy_link**    
+
+---
