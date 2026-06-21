@@ -7,6 +7,12 @@
 
 ## 수업 자료 📎
 
+- 1주차 노션 링크: **https://www.notion.so/native/1-32c903023d6680509232c95252b36e2f?source=copy_link&deepLinkOpenNewTab=true**  
+
+---
+
+## 수업 자료 📎
+
 - 2주차 노션 링크: **https://www.notion.so/2-32c903023d6680a09ef5f8be24845130?source=copy_link**    
 
 ---
