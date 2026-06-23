@@ -1,4 +1,4 @@
-# 🦁 멋쟁이사자처럼 한서대 14기 백엔드 1학기 수업
+# 🦁 멋쟁이사자처럼 한서대 14기 백엔드 26년 1학기 수업 코드
 
 멋쟁이사자처럼 한서대학교 14기에서 **백엔드 팀장**을 맡아 2026년 1학기 동안 진행한 백엔드 수업 내용을 정리한 저장소입니다.
 
@@ -92,23 +92,6 @@
 
 ---
 
-## 🚀 실행 방법
-
-```bash
-# 저장소 클론
-git clone 저장소_URL
-
-# 프로젝트 폴더 이동
-cd 프로젝트_폴더명
-
-# 실행
-./gradlew bootRun
-```
-
-또는 IDE에서 프로젝트를 열고 `Application` 파일을 실행하면 됩니다.
-
----
-
 ## 🧩 예제 API
 
 ```http
@@ -135,13 +118,3 @@ DELETE /api/example/{id}
 이번 수업을 통해 백엔드 개발 지식을 전달하는 과정에서 개념을 명확하게 설명하는 능력과 실습 중심의 자료 구성 능력을 기를 수 있었습니다.
 
 특히 팀원들이 직접 API를 구현하고 테스트할 수 있도록 수업을 구성하면서, 협업과 교육 측면에서 백엔드 팀장의 역할을 경험할 수 있었습니다.
-
----
-
-## 🔗 관련 자료
-
-* 1주차 Notion: https://www.notion.so/native/1-32c903023d6680509232c95252b36e2f?source=copy_link&deepLinkOpenNewTab=true
-* 2주차 Notion: https://www.notion.so/2-32c903023d6680a09ef5f8be24845130?source=copy_link
-* 3주차 Notion: https://www.notion.so/3-32c903023d6680fdb97af2a42ccf9471?source=copy_link
-* 4주차 Notion: https://app.notion.com/p/4-32c903023d668012ad70dedb774fb750?source=copy_link&assetsVersion=23.13.20260615.0944
-* 5주차 Notion: https://app.notion.com/p/5-342903023d6680c1ba44d7c1fd0cd2f7?source=copy_link
