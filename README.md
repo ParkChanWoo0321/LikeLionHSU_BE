@@ -41,15 +41,58 @@
 
 ## 🗂️ 저장소 구성
 
+## 🗂️ 코드 구조
+
 ```bash
-.
-├── week1/      # 1주차 실습 코드
-├── week2/      # 2주차 실습 코드
-├── week3/      # 3주차 실습 코드
-├── week4/      # 4주차 실습 코드
-├── week5/      # 5주차 실습 코드
-└── README.md
+SimpleMemo
+├── .gradle
+├── .idea
+├── build
+├── gradle
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── example
+│   │   │           └── simplememo
+│   │   │               ├── controller
+│   │   │               │   ├── CommentController
+│   │   │               │   └── MemoController
+│   │   │               ├── dto
+│   │   │               │   ├── CommentRequestDto
+│   │   │               │   ├── CommentResponseDto
+│   │   │               │   ├── MemoRequestDto
+│   │   │               │   └── MemoResponseDto
+│   │   │               ├── entity
+│   │   │               │   ├── Comment
+│   │   │               │   └── Memo
+│   │   │               ├── repository
+│   │   │               │   ├── CommentRepository
+│   │   │               │   └── MemoRepository
+│   │   │               ├── service
+│   │   │               │   ├── CommentService
+│   │   │               │   └── MemoService
+│   │   │               ├── CommonResponse
+│   │   │               └── SimpleMemoApplication
+│   │   └── resources
+│   │       ├── static
+│   │       ├── templates
+│   │       └── application.yml
+│   └── test
+├── .gitattributes
+└── .gitignore
 ```
+
+| 폴더 / 파일                 | 설명                              |
+| ----------------------- | ------------------------------- |
+| `controller`            | 클라이언트 요청을 받아 API 엔드포인트를 처리하는 계층 |
+| `dto`                   | 요청 데이터와 응답 데이터를 전달하기 위한 객체      |
+| `entity`                | 데이터베이스 테이블과 매핑되는 도메인 객체         |
+| `repository`            | 데이터베이스 접근을 담당하는 계층              |
+| `service`               | 비즈니스 로직을 처리하는 계층                |
+| `CommonResponse`        | 공통 응답 형식을 관리하는 클래스              |
+| `SimpleMemoApplication` | Spring Boot 애플리케이션 실행 파일        |
+| `application.yml`       | 서버, DB, JPA 등 프로젝트 설정 파일        |
 
 ---
 
