@@ -2,7 +2,7 @@
 
 멋쟁이사자처럼 한서대학교 14기에서 **백엔드 팀장**을 맡아 2026년 1학기 동안 진행한 백엔드 수업 내용을 정리한 저장소입니다.
 
-본 저장소는 수업에서 사용한 **실습 코드와 예제 프로젝트 코드**를 정리한 공간이며, 각 주차별 이론 자료와 실습 가이드는 Notion을 통해 함께 제공합니다.
+본 저장소는 수업에서 사용한 **Java 기초 실습 코드와 SimpleMemo Spring Boot 예제 프로젝트 코드**를 정리한 공간이며, 각 주차별 이론 자료와 실습 가이드는 Notion을 통해 함께 제공합니다.
 
 ---
 
@@ -43,72 +43,131 @@
 
 ```bash
 SimpleMemo
-├── .gradle
-├── .idea
-├── build
 ├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
 ├── src
+│   ├── HelloWorld.java
+│   ├── DataType.java
+│   ├── Condition.java
+│   ├── Loop.java
+│   ├── Array.java
+│   ├── Input.java
+│   ├── BabyLion.java
+│   ├── package1
+│   │   ├── Lion.java
+│   │   ├── Step1.java
+│   │   └── Step2.java
+│   ├── package2
+│   │   └── Step3.java
 │   ├── main
 │   │   ├── java
 │   │   │   └── com
 │   │   │       └── example
 │   │   │           └── simplememo
 │   │   │               ├── controller
-│   │   │               │   ├── CommentController
-│   │   │               │   └── MemoController
+│   │   │               │   ├── CommentController.java
+│   │   │               │   └── MemoController.java
 │   │   │               ├── dto
-│   │   │               │   ├── CommentRequestDto
-│   │   │               │   ├── CommentResponseDto
-│   │   │               │   ├── MemoRequestDto
-│   │   │               │   └── MemoResponseDto
+│   │   │               │   ├── CommentRequestDto.java
+│   │   │               │   ├── CommentResponseDto.java
+│   │   │               │   ├── MemoRequestDto.java
+│   │   │               │   └── MemoResponseDto.java
 │   │   │               ├── entity
-│   │   │               │   ├── Comment
-│   │   │               │   └── Memo
+│   │   │               │   ├── Comment.java
+│   │   │               │   └── Memo.java
 │   │   │               ├── repository
-│   │   │               │   ├── CommentRepository
-│   │   │               │   └── MemoRepository
+│   │   │               │   ├── CommentRepository.java
+│   │   │               │   └── MemoRepository.java
 │   │   │               ├── service
-│   │   │               │   ├── CommentService
-│   │   │               │   └── MemoService
-│   │   │               ├── CommonResponse
-│   │   │               └── SimpleMemoApplication
+│   │   │               │   ├── CommentService.java
+│   │   │               │   └── MemoService.java
+│   │   │               ├── CommonResponse.java
+│   │   │               └── SimpleMemoApplication.java
 │   │   └── resources
-│   │       ├── static
-│   │       ├── templates
 │   │       └── application.yml
 │   └── test
+│       └── java
+│           └── com
+│               └── example
+│                   └── simplememo
+│                       └── SimpleMemoApplicationTests.java
+├── build.gradle
+├── settings.gradle
+├── gradlew
+├── gradlew.bat
 ├── .gitattributes
 └── .gitignore
 ```
 
-| 폴더 / 파일                 | 설명                              |
-| ----------------------- | ------------------------------- |
-| `controller`            | 클라이언트 요청을 받아 API 엔드포인트를 처리하는 계층 |
-| `dto`                   | 요청 데이터와 응답 데이터를 전달하기 위한 객체      |
-| `entity`                | 데이터베이스 테이블과 매핑되는 도메인 객체         |
-| `repository`            | 데이터베이스 접근을 담당하는 계층              |
-| `service`               | 비즈니스 로직을 처리하는 계층                |
-| `CommonResponse`        | 공통 응답 형식을 관리하는 클래스              |
-| `SimpleMemoApplication` | Spring Boot 애플리케이션 실행 파일        |
-| `application.yml`       | 서버, DB, JPA 등 프로젝트 설정 파일        |
+| 폴더 / 파일                 | 설명                                        |
+| ----------------------- | ----------------------------------------- |
+| `src/*.java`            | Java 기초 문법 실습 코드                          |
+| `src/package1`          | 클래스, 생성자, 객체 생성, 검증 메서드 실습 코드              |
+| `src/package2`          | 패키지와 접근 제어자 실습 코드                         |
+| `controller`            | 클라이언트 요청을 받아 Memo, Comment API 엔드포인트를 처리하는 계층 |
+| `dto`                   | 요청 데이터와 응답 데이터를 전달하기 위한 객체                |
+| `entity`                | 데이터베이스 테이블과 매핑되는 Memo, Comment 도메인 객체      |
+| `repository`            | Spring Data JPA 기반 데이터베이스 접근 계층            |
+| `service`               | 메모와 댓글의 생성, 조회, 수정, 삭제 비즈니스 로직 처리 계층      |
+| `CommonResponse`        | `statusCode`, `msg`, `data`를 담는 공통 응답 클래스 |
+| `SimpleMemoApplication` | Spring Boot 애플리케이션 실행 파일                  |
+| `application.yml`       | 서버, MySQL, JPA 등 프로젝트 설정 파일               |
+| `build.gradle`          | 프로젝트 의존성과 Java 버전, Spring Boot 설정 파일       |
+
+---
+
+## ✅ 주요 구현 기능
+
+* 메모 생성
+* 메모 단건 조회
+* 메모 전체 조회
+* 메모 수정
+* 메모 삭제
+* 특정 메모에 댓글 작성
+* 특정 메모의 댓글 목록 조회
+* 댓글 수정
+* 댓글 삭제
+* `Memo`와 `Comment`의 1:N 연관관계 구성
+* `CommonResponse<T>`를 활용한 공통 응답 형식 구성
 
 ---
 
 ## 🛠️ 사용 기술
 
-| 분야              | 기술              |
-| --------------- | --------------- |
-| Language        | Java            |
-| Framework       | Spring Boot     |
-| Database        | MySQL           |
-| ORM             | Spring Data JPA |
-| API Test        | Postman         |
-| Version Control | Git, GitHub     |
+| 분야              | 기술                                  |
+| --------------- | ----------------------------------- |
+| Language        | Java 17                             |
+| Framework       | Spring Boot 4.0.5                   |
+| Build Tool      | Gradle Wrapper 9.4.1                |
+| Web             | Spring Web MVC                      |
+| Database        | MySQL                               |
+| ORM / DB Access | Spring Data JPA, Spring Data JDBC, JDBC |
+| Library         | Lombok                              |
+| API Test        | Postman                             |
+| Version Control | Git, GitHub                         |
+
+---
+
+## ⚙️ 프로젝트 설정
+
+`application.yml` 기준 프로젝트 실행 설정은 다음과 같습니다.
+
+| 항목       | 설정값                                      |
+| -------- | ---------------------------------------- |
+| Server Port | `8080`                                  |
+| Database URL | `jdbc:mysql://localhost:3306/likelionstudy` |
+| Database User | `root`                                |
+| JPA DDL Auto | `create`                              |
+| SQL Log | `show_sql`, `format_sql`, `use_sql_comments` |
 
 ---
 
 ## 💡 주요 학습 내용
 
+* Java 기본 출력, 자료형, 조건문, 반복문, 배열, 입력 처리 실습
+* 클래스, 객체 생성, 생성자, 메서드, 접근 제어자 이해
 * 백엔드 서버의 역할과 웹 서비스 동작 흐름 이해
 * HTTP 요청과 응답 구조 학습
 * REST API 설계 방식 학습
@@ -116,7 +175,7 @@ SimpleMemo
 * Controller, Service, Repository 계층 분리
 * MySQL 데이터베이스 연동
 * JPA를 활용한 Entity 설계
-* CRUD API 구현
+* Memo, Comment CRUD API 구현
 * 프론트엔드와 백엔드 연동 방식 이해
 
 ---
@@ -135,11 +194,33 @@ SimpleMemo
 
 ## 🧩 예제 API
 
-```http
-GET /api/example
-POST /api/example
-PUT /api/example/{id}
-DELETE /api/example/{id}
+### Memo API
+
+| Method | Endpoint             | 기능       | Request Body |
+| ------ | -------------------- | ---------- | ------------ |
+| `POST` | `/api/memo`          | 메모 생성   | `title`, `content` |
+| `GET`  | `/api/memo`          | 메모 전체 조회 | - |
+| `GET`  | `/api/memo/{memoId}` | 메모 단건 조회 | - |
+| `PUT`  | `/api/memo/{memoId}` | 메모 수정   | `title`, `content` |
+| `DELETE` | `/api/memo/{memoId}` | 메모 삭제 | - |
+
+### Comment API
+
+| Method | Endpoint                         | 기능              | Request Body |
+| ------ | -------------------------------- | ----------------- | ------------ |
+| `POST` | `/api/memo/comments/{memoId}`    | 특정 메모에 댓글 생성 | `content` |
+| `GET`  | `/api/memo/comments/{memoId}`    | 특정 메모의 댓글 조회 | - |
+| `PUT`  | `/api/memo/comments/{commentId}` | 댓글 수정          | `content` |
+| `DELETE` | `/api/memo/comments/{commentId}` | 댓글 삭제        | - |
+
+### 공통 응답 형식
+
+```json
+{
+  "statusCode": 200,
+  "msg": "응답 메시지",
+  "data": {}
+}
 ```
 
 각 주차별 상세 API와 실습 내용은 Notion 수업 자료에서 확인할 수 있습니다.
