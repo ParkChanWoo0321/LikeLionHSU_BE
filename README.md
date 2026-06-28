@@ -21,7 +21,19 @@
 
 ## 🧑‍🏫 수업 목적
 
-<img width="317" height="178" alt="Image" src="https://github.com/user-attachments/assets/9dc0f8a4-0013-439b-98f1-ac2943677d3e" />
+<table>
+  <tr>
+    <td align="center">
+      <img 
+        src="https://github.com/user-attachments/assets/9dc0f8a4-0013-439b-98f1-ac2943677d3e"
+        alt="프로젝트 이미지" 
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
+
+<br />
 
 이 수업은 백엔드를 처음 접하는 학생들이 웹 서비스의 서버 구조를 이해하고, 직접 API를 구현해보는 것을 목표로 진행되었습니다.
 
