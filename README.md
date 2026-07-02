@@ -42,6 +42,20 @@
 
 ## 📚 주차별 수업 자료
 
+<table>
+  <tr>
+    <td align="center">
+      <img 
+        src="https://github.com/user-attachments/assets/1ce13041-bb6a-4c61-9437-926247fa5de2"
+        alt="프로젝트 이미지" 
+        width="100%"
+      />
+    </td>
+  </tr>
+</table>
+
+<br />
+
 | 주차  | 주제                                    | 수업 자료                                                                                                                         |
 | --- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | 1주차 | Java 핵심 문법 & 흐름 객체지향 - 클래스 & 캡슐화  | [Notion 바로가기](https://www.notion.so/native/1-32c903023d6680509232c95252b36e2f?source=copy_link&deepLinkOpenNewTab=true)       |
