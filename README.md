@@ -56,13 +56,7 @@
 
 <br />
 
-| 주차  | 주제                                    | 수업 자료                                                                                                                         |
-| --- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 1주차 | Java 핵심 문법 & 흐름 객체지향 - 클래스 & 캡슐화  | [Notion 바로가기](https://www.notion.so/native/1-32c903023d6680509232c95252b36e2f?source=copy_link&deepLinkOpenNewTab=true)       |
-| 2주차 | 백엔드 환경 세팅 및 게시글 CRUD 중 C 작성하기 | [Notion 바로가기](https://www.notion.so/2-32c903023d6680a09ef5f8be24845130?source=copy_link)                                      |
-| 3주차 | 게시글 CRUD 중 RUD 작성하기 | [Notion 바로가기](https://www.notion.so/3-32c903023d6680fdb97af2a42ccf9471?source=copy_link)                                      |
-| 4주차 | 다대다 + 댓글 CRUD | [Notion 바로가기](https://app.notion.com/p/4-32c903023d668012ad70dedb774fb750?source=copy_link&assetsVersion=23.13.20260615.0944) |
-| 5주차 | 프론트엔드 연동  | [Notion 바로가기](https://app.notion.com/p/5-342903023d6680c1ba44d7c1fd0cd2f7?source=copy_link)                                   |
+[Notion 바로가기](https://app.notion.com/p/14-32c903023d6680eeb55ef245e2c594ff?source=copy_link) 
 
 ---
 
