@@ -56,7 +56,7 @@
 
 <br />
 
-[Notion 바로가기](https://app.notion.com/p/14-32c903023d6680eeb55ef245e2c594ff?source=copy_link) 
+| 수업자료 | [Notion 바로가기](https://app.notion.com/p/14-32c903023d6680eeb55ef245e2c594ff?source=copy_link) |
 
 ---
 
